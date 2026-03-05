@@ -1,0 +1,42 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Dodger</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <header class="panel top-panel">
+        <h1>NEON DODGER</h1>
+        <p>Dodge the rain. Survive longer. Beat your best.</p>
+      </header>
+
+      <section class="panel game-panel">
+        <div class="hud">
+          <div><span>Score</span><strong id="score">0</strong></div>
+          <div><span>Best</span><strong id="best">0</strong></div>
+          <div><span>Speed</span><strong id="speed">1.0x</strong></div>
+        </div>
+
+        <div class="canvas-wrap" id="touchZone">
+          <canvas id="game" width="480" height="720" aria-label="Neon Dodger game canvas"></canvas>
+          <div class="overlay" id="overlay">
+            <h2 id="overlayTitle">Tap to Start</h2>
+            <p id="overlayText">Move with Arrow keys, A/D, or drag on screen.</p>
+            <button id="startBtn" type="button">Start Game</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>

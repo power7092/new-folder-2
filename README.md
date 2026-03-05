@@ -1,3 +1,7 @@
-# »õ Æú´õ (2)
+ï»¿# Neon Dodger
 
-Initialized for GitHub management.
+A lightweight browser game that runs as a static website.
+
+## Play locally
+
+Open `index.html` in a browser.
